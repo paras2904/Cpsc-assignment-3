@@ -181,7 +181,9 @@ void SaveMemoryValuesToFile(string[] dates, double[] values, int logicalSize)
 int AddMemoryValues(string[] dates, double[] values, int logicalSize)
 {
     if (logicalSize == MAX)
+    {
         throw new Exception("Memory is full");
+    }
     Console.WriteLine("Enter the date:");
     string date = Console.ReadLine();
     Console.WriteLine("Enter the value:");
@@ -204,4 +206,11 @@ void EditMemoryValues(string[] dates, double[] values, int logicalSize)
 void GraphValuesInMemory(string[] dates, double[] values, int logicalSize)
 {
     Console.WriteLine("Not implemented.");
+
+
+
+
+
+
+
 }
